@@ -26,6 +26,12 @@ def home():
     return jsonify({"message": "News Backend Running!"})
 
 
+# ⭐ NEW TEST ROUTE
+@app.route("/test", methods=["GET"])
+def test_route():
+    return jsonify({"message": "Test route working!"})
+
+
 # ⭐ MAIN ROUTE: Fetch News by Region
 @app.route("/rss-news", methods=["POST"])
 def rss_news():
