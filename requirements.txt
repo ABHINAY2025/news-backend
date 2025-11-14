@@ -2,4 +2,4 @@ flask
 flask-cors
 requests
 feedparser
-werkzeug
+gunicorn
